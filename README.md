@@ -1,20 +1,20 @@
 # Simple Telegram bot to get link of post or message
 
-Telegram makes possible to use share links to show message from public channel or chat.
-What Telegram did bad is its clients (e.g. official Telegram for Android) don't have this
-function.
+Telegram makes possible to share links to redirect to the message from public channel or
+chat. What Telegram did bad is some its clients (e.g. official Telegram for Android)
+don't have this function.
 
-This simple bot written in Python was created with the function to overcome the lack.
-It requires Python3.7 (sorry for using f'' but it's awesome) and python-telegram-bot
-library. It has less than 60 lines (still a lot) of clear Python code and I hope
-it will remain so.
+This simple bot written in Python was created with the function to overcome the lack. It
+requires Python3.7 (sorry for using `f'{foo}'` but it's awesome) and python-telegram-bot
+library. It has less than 60 lines (still a lot) of clear Python code and I hope it will
+remain so.
 
 Bot answers on /start command and on any forwarded message. If forwarded message can be
 used to generate the link bot would answer with that link.
 
 ## Launching
 
-Be sure you have `python3.7` and python-telegram-bot (v. 12)
+Be sure you have `python3.7` and `python-telegram-bot` (v. 12)
 
 ```
 python -m pip install requirements.txt
