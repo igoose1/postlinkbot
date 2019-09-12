@@ -24,12 +24,12 @@ Clone, go to repo and run bot with Telegram Bot token (can be given by
 https://t.me/BotFather).
 
 ```
-python main.py TOKEN
+python bot/main.py TOKEN
 ```
 
 To not keep token in mind I'm saving it in `token` file and run bot by nesting command.
 
 ```
-python main.py $(cat token)
+python bot/main.py $(cat token)
 ```
 
