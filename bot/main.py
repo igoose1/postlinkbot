@@ -34,7 +34,6 @@ class MessageProcess:
     def post(self, update, context):
         message = update.message
         mid, chat = message.forward_from_message_id, message.forward_from_chat
-        print(mid, chat)
         if mid is chat is None:
             answer = 'Forwarded message is not from public channel or chat.'
         else:
