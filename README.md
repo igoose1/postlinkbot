@@ -21,7 +21,7 @@ python -m pip install requirements.txt
 ```
 
 Clone, go to repo and run bot with Telegram Bot token (can be given by
-https://t.meBotFather).
+https://t.me/BotFather).
 
 ```
 python main.py TOKEN
