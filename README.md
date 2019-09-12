@@ -9,6 +9,9 @@ It requires Python3.7 (sorry for using f'' but it's awesome) and python-telegram
 library. It has less than 60 lines (still a lot) of clear Python code and I hope
 it will remain so.
 
+Bot answers on /start command and on any forwarded message. If forwarded message can be
+used to generate the link bot would answer with that link.
+
 ## Launching
 
 Be sure you have `python3.7` and python-telegram-bot (v. 12)
