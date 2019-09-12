@@ -15,6 +15,7 @@
 
 from telegram.ext import *
 import sys
+import logging
 
 
 class MessageProcess:
@@ -45,11 +46,18 @@ class MessageProcess:
         )
 
 
-if len(sys.argv) != 2:
-    sys.exit('Set token as argument: python main.py TOKEN')
-token = sys.argv[1]
+logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+
 mp = MessageProcess()
 
+if len(sys.argv) != 2:
+    logging.error('Could not parse token.')
+    logging.info('Set token as argument: python main.py TOKEN.')
+    sys.exit(1)
+token = sys.argv[1]
 updater = Updater(token=token, use_context=True)
 dispatcher = updater.dispatcher
 
@@ -68,3 +76,4 @@ for h in handlers:
     dispatcher.add_handler(h)
 
 updater.start_polling()
+logging.info('Bot started working.')
