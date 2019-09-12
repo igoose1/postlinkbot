@@ -1,8 +1,8 @@
 # Simple Telegram bot to get link of post or message
 
-Telegram makes possible to share links to redirect to the message from public channel or
-chat. What Telegram did bad is some its clients (e.g. official Telegram for Android)
-don't have this function.
+Telegram makes possible to share links to redirect to the message from public channel.
+What Telegram did bad is some its clients (e.g. official Telegram for Android) don't have
+this function.
 
 This simple bot written in Python was created with the function to overcome the lack. It
 requires Python3.7 (sorry for using `f'{foo}'` but it's awesome) and python-telegram-bot

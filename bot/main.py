@@ -21,7 +21,7 @@ class MessageProcess:
     def start(self, update, context):
         answer = (
             'o/\n\n'
-            'Forward post of public channel or message from public chat to get its link!\n\n'
+            'Forward post of public channel to get its link!\n\n'
             'This bot is developed with the problem that some Telegram clients '
             'make getting post link impossible. '
             'Source code is hosted here: https://github.com/igoose1/postlinkbot'
@@ -35,7 +35,7 @@ class MessageProcess:
         message = update.message
         mid, chat = message.forward_from_message_id, message.forward_from_chat
         if mid is chat is None:
-            answer = 'Forwarded message is not from public channel or chat.'
+            answer = 'Forwarded message is not from public channel.'
         else:
             answer = f'https://t.me/{chat.username}/{mid}'
 
